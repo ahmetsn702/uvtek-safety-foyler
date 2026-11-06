@@ -33,6 +33,8 @@ X-Y-Z eksenli kartezyen robot, boyanacak parçanın üzerinde sprey tabancasın�
 
 Tüm föylerin tek dosya hali: [UVTEK_Foyler_1-7.pdf](UVTEK_Foyler_1-7.pdf)
 
+İlk 4 föyün teslim edilen tek dosya hali (23/10/2026): [UVTEK_Foyler_1-4.pdf](UVTEK_Foyler_1-4.pdf)
+
 ## Özet
 
 - **Emniyet fonksiyonu:** Kabin kapısı açılınca ya da E-stop'a basılınca eksenler ve tabanca durur (STO).
