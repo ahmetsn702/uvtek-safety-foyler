@@ -1,9 +1,9 @@
-# UVTEK Kartezyen Robot Sprey Boyama Makinesi: Safety 4.0 Lab Föyleri (1–4)
+# UVTEK Kartezyen Robot Sprey Boyama Makinesi: Safety 4.0 Lab Föyleri (1–7)
 
 **Ad Soyad:** Ahmed Hüsrev Sayın
 **Grup:** Gece - 225541103
 
-Safety 4.0 Bootcamp'teki ilk 4 laboratuvar föyünü kendi seçtiğimiz makine, **UVTEK Kartezyen Robot Sprey Boyama Makinesi** için doldurduk.
+Safety 4.0 Bootcamp'teki ilk 7 laboratuvar föyünü kendi seçtiğimiz makine, **UVTEK Kartezyen Robot Sprey Boyama Makinesi** için doldurduk.
 
 ## Makine
 
@@ -27,8 +27,11 @@ X-Y-Z eksenli kartezyen robot, boyanacak parçanın üzerinde sprey tabancasın�
 | 2 | IEC 62443 Mini Workshop | Zone / Conduit Diagram | [Lab2_Zone_Conduit.pdf](foyler/Lab2_Zone_Conduit.pdf) |
 | 3 | Threat & Risk + Risk Matrix | Risk Register | [Lab3_Risk_Register.pdf](foyler/Lab3_Risk_Register.pdf) |
 | 4 | Secure Remote Access | Secure Architecture | [Lab4_Secure_Remote_Access.pdf](foyler/Lab4_Secure_Remote_Access.pdf) |
+| 5 | SBOM / CVE / Patch | Vulnerability Decision | [Lab5_SBOM_CVE_Patch.pdf](foyler/Lab5_SBOM_CVE_Patch.pdf) |
+| 6 | CRA Incident Simulation | Incident Workflow | [Lab6_CRA_Incident.pdf](foyler/Lab6_CRA_Incident.pdf) |
+| 7 | AI Safety Challenge | AI Fail-Safe Decision | [Lab7_AI_Safety.pdf](foyler/Lab7_AI_Safety.pdf) |
 
-Dört föyün tek dosya hali: [UVTEK_Foyler_1-4.pdf](UVTEK_Foyler_1-4.pdf)
+Tüm föylerin tek dosya hali: [UVTEK_Foyler_1-7.pdf](UVTEK_Foyler_1-7.pdf)
 
 ## Özet
 
@@ -37,5 +40,8 @@ Dört föyün tek dosya hali: [UVTEK_Foyler_1-4.pdf](UVTEK_Foyler_1-4.pdf)
 - **En kritik risk:** Uzak servis üzerinden Safety PLC'de kapı kilidinin kapatılması (L2 × S3 × E3 = 18, Kritik).
 - **Uzak erişim:** Jump server + VPN + MFA + kişisel hesap + tam oturum kaydı + varsayılan kapalı.
 - **Bağımsızlık gereksinimi:** Kontrol sistemi veya ağ ele geçirilse bile emniyet fonksiyonu eksenleri ve tabancayı durdurabilmeli.
+- **Zafiyet (CVE):** PLC firmware açığında üretim hemen durmaz; önce uzak erişim kapanır, yama yedek PLC'de test edilir, safety etkileniyorsa kapı/E-stop testleri tekrarlanır.
+- **Olay müdahalesi:** Önce emniyet (kapı kilidi, E-stop testi), hemen sonra kanıt (PLC programı ve loglar yedeklenir, reset atılmaz); CRA 24s / 72s / 14 gün adımları.
+- **Yapay zekâ:** Kamera + model sadece parça/program seçer; güvenli sınırlar PLC'de sabit, şüpheli girdide parça boyanmaz, %90 altı güvende insana sorulur.
 
 > Bu bir eğitim çalışmasıdır, resmî denetim değildir.
