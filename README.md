@@ -42,6 +42,6 @@ Tüm föylerin tek dosya hali: [UVTEK_Foyler_1-7.pdf](UVTEK_Foyler_1-7.pdf)
 - **Bağımsızlık gereksinimi:** Kontrol sistemi veya ağ ele geçirilse bile emniyet fonksiyonu eksenleri ve tabancayı durdurabilmeli.
 - **Zafiyet (CVE):** PLC firmware açığında üretim hemen durmaz; önce uzak erişim kapanır, yama yedek PLC'de test edilir, safety etkileniyorsa kapı/E-stop testleri tekrarlanır.
 - **Olay müdahalesi:** Önce emniyet (kapı kilidi, E-stop testi), hemen sonra kanıt (PLC programı ve loglar yedeklenir, reset atılmaz); CRA 24s / 72s / 14 gün adımları.
-- **Yapay zekâ:** Kamera + model sadece parça/program seçer; güvenli sınırlar PLC'de sabit, şüpheli girdide parça boyanmaz, %90 altı güvende insana sorulur.
+- **Yapay zekâ:** Kamera + model sadece parçayı tanıyıp program seçer; güvenli sınırlar PLC'de sabit. Şüpheli girdide ya da %90 altı güvende parça boyanmaz, operatöre sorulur.
 
 > Bu bir eğitim çalışmasıdır, resmî denetim değildir.
